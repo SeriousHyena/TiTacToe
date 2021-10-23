@@ -19,16 +19,24 @@ const int COLS = 3;
 
 //declare functions here
 void runGame();
+void initializeGameBoard(string gameBoard[ROWS][COLS]);		//set up the game board
+
+
 
 
 int main()
 {
-	runGame();
+	runGame();												//call the main function yo start the game
 	return 0;
 }
 
 //place functions here
 void runGame()
+{
+	void initializeGameBoard(string gameBoard[ROWS][COLS]);
+}
+
+void initializeGameBoard(string gameBoard[ROWS][COLS])
 {
 	
 }
