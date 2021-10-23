@@ -14,29 +14,41 @@
 using namespace std;
 
 //declare constants here
-const int ROWS = 3;
-const int COLS = 3;
+string row = "-";
+string col = "|";
+
+//declare variables here
+
+
 
 //declare functions here
-void runGame();
-void initializeGameBoard(string gameBoard[ROWS][COLS]);		//set up the game board
+string printBoard(string row, string column);
 
 
 
 
 int main()
 {
-	runGame();												//call the main function yo start the game
+	string printBoard(string row, string col);												//call the main function to start the game
+	string foo = printBoard("-", "|");
+	cout << foo << endl;
+	
 	return 0;
 }
 
 //place functions here
-void runGame()
+string printBoard(string row, string column)
 {
-	void initializeGameBoard(string gameBoard[ROWS][COLS]);
-}
+	for (int i = 0; i < 3; i++)
+	{
+		cout << row;
+	}
 
-void initializeGameBoard(string gameBoard[ROWS][COLS])
-{
-	
+	for (int i = 0; i < 3; i++)
+	{
+		cout << col;
+	}
+
+
+	return "1";
 }
