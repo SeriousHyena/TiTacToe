@@ -22,7 +22,8 @@ string col = "|";
 
 
 //declare functions here
-string printBoard(string row, string col);
+string printBoard(string row, string col);			//construct the board using hard-coding
+void boardArray(string row, string col);			//construct the board using 2-d array
 
 
 
@@ -37,7 +38,7 @@ int main()
 }
 
 //place functions here
-string printBoard(string row, string col)
+string printBoard(string row, string col)	//this is a hard-coded approach to printing the board
 {
 	int count = 0;
 	while (count < 3) {
@@ -65,4 +66,9 @@ string printBoard(string row, string col)
 		count++;
 	}
 	return 0;
+}
+
+void boardArray(string row, string col)
+{
+
 }
