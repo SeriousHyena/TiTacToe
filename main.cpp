@@ -14,61 +14,46 @@
 using namespace std;
 
 //declare constants here
-string row = "-";
-string col = "|";
+string row = "-";									//a container for the string character in the row part of the array
+string col = "|";									//a container for the string character in the column part of the array
 
-//declare variables here
+
+//declare arrays here
+string board[3][5]{
+	{"---", "|", "---","|", "---",},
+	{"---", "|", "---","|", "---"},					//construct the array to build the game board				
+	{"---", "|", "---","|", "---"}
+};
+
 
 
 
 //declare functions here
-string printBoard(string row, string col);			//construct the board using hard-coding
 void boardArray(string row, string col);			//construct the board using 2-d array
 
-
+string fum = "";
 
 
 int main()
 {
-	string printBoard(string row, string col);												//call the main function to start the game
-	string foo = printBoard(row, col);
-	cout << foo << endl;
+	
+	void boardArray(string row, string col);
+	boardArray(row, col);
+	cout << boardArray;
 	
 	return 0;
 }
 
 //place functions here
-string printBoard(string row, string col)	//this is a hard-coded approach to printing the board
+
+void boardArray(string row, string col)					//simple function to print out the game board
 {
-	int count = 0;
-	while (count < 3) {
-
-		for (int i = 0; i < 3; i++)			//print the first 3 horiz bars
+	for (int row = 0; row < 3; row ++)
+	{
+		for (int col = 0; col < 5; col ++)
 		{
-			cout << row ;				
-		}
-		
-		cout << col;						//print the first vert bar
-	
-		for (int i = 0; i < 3; i++)
-		{
-			cout << row;					//print the second 3 horiz bars
-		}
-
-		cout << col;						//print the second vert bar
-
-		for (int i = 0; i < 3; i++)
-		{
-			cout << row;					//print the last 3 horiz bars
+			cout << board[row][col];
 		}
 		cout << endl;
-		
-		count++;
 	}
-	return 0;
-}
-
-void boardArray(string row, string col)
-{
-
 }
