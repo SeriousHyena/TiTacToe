@@ -22,7 +22,7 @@ string col = "|";
 
 
 //declare functions here
-string printBoard(string row, string column);
+string printBoard(string row, string col);
 
 
 
@@ -30,25 +30,38 @@ string printBoard(string row, string column);
 int main()
 {
 	string printBoard(string row, string col);												//call the main function to start the game
-	string foo = printBoard("-", "|");
+	string foo = printBoard(row, col);
 	cout << foo << endl;
 	
 	return 0;
 }
 
 //place functions here
-string printBoard(string row, string column)
+string printBoard(string row, string col)
+
 {
-	for (int i = 0; i < 3; i++)
-	{
-		cout << row;
-	}
+	int count = 0;
+	while (count < 6) {
 
-	for (int i = 0; i < 3; i++)
-	{
+		for (int i = 0; i < 3; i++)
+		{
+			cout << row ;				
+		}
+		
 		cout << col;
+	
+		for (int i = 0; i < 3; i++)
+		{
+			cout << row;			
+		}
+
+		cout << col;
+
+		for (int i = 0; i < 3; i++)
+		{
+			cout << row;
+		}
+		return 0;
+		count++;
 	}
-
-
-	return "1";
 }
