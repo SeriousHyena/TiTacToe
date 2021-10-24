@@ -39,7 +39,7 @@ int main()
 	
 	void boardArray(string row, string col);
 	boardArray(row, col);
-	cout << boardArray;
+
 	
 	return 0;
 }
