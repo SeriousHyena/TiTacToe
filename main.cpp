@@ -38,30 +38,31 @@ int main()
 
 //place functions here
 string printBoard(string row, string col)
-
 {
 	int count = 0;
-	while (count < 6) {
+	while (count < 3) {
 
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < 3; i++)			//print the first 3 horiz bars
 		{
 			cout << row ;				
 		}
 		
-		cout << col;
+		cout << col;						//print the first vert bar
 	
 		for (int i = 0; i < 3; i++)
 		{
-			cout << row;			
+			cout << row;					//print the second 3 horiz bars
 		}
 
-		cout << col;
+		cout << col;						//print the second vert bar
 
 		for (int i = 0; i < 3; i++)
 		{
-			cout << row;
+			cout << row;					//print the last 3 horiz bars
 		}
-		return 0;
+		cout << endl;
+		
 		count++;
 	}
+	return 0;
 }
