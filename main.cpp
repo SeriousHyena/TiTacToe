@@ -25,11 +25,10 @@ string userTurn;
 
 
 //declare arrays here
-string board[4][5]{
-	{"___", "|", "___","|", "___"},
-	{"___", "|", "___","|", "___"},					//construct the array to build the game board				
-	{"___", "|", "___","|", "___"},
-	{"   ", "|", "   ","|", "   "}
+string board[3][3]{
+	{"--|", "--", "|--"},
+	{"--|", "--", "|--"},					//construct the array to build the game board				
+	{"--|", "--", "|--"}
 	
 };
 
@@ -67,9 +66,9 @@ int main()
 //place functions here
 void boardArray(string row, string col)				//simple function to print out the game board
 {
-	for (int row = 0; row < 4; row ++)
+	for (int row = 0; row < 3; row ++)
 	{
-		for (int col = 0; col < 5; col ++)
+		for (int col = 0; col < 3; col ++)
 		{
 			cout << board[row][col];
 		}
