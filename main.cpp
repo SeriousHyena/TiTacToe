@@ -77,7 +77,7 @@ void boardArray(string row, string col)				//simple function to print out the ga
 	}
 }
 
-void getUserInput(string userTurn, string boardArray[ROW][COL])
+void getUserInput(string userTurn, string boardArray[ROW][COL])		//test
 {
 	cout << "Enter a move on the board in the form of row,col: ";
 	cin >> userTurn;
